@@ -1,0 +1,27 @@
+{
+  "name": "SignBridge",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage","scripting","activeTab","tabs"],
+  "host_permissions": ["https://www.youtube.com/*","https://*/*",
+    "http://*/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["videos/*.mp4"],
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "128": "icons/icon128.png",
+      "1080":"icons/icon1080.png"
+  }
+}

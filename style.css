@@ -1,0 +1,58 @@
+/* Apply a full-screen black gradient background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: white;
+    text-align: center;
+    width: 250px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glassmorphism container */
+.glass-container {
+    background: rgba(255, 255, 255, 0.1); /* Light transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+/* 3D Glass Effect Button */
+button {
+    background: linear-gradient(135deg, #ff6f00, #ff3d00); /* Orange Gradient */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(255, 100, 0, 0.5); /* 3D Glow Effect */
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+button:hover {
+    transform: scale(1.1); /* Button enlarges slightly */
+    box-shadow: 0px 8px 20px rgba(255, 100, 0, 0.7);
+}
+
+/* Floating Sign Video Styling */
+.sign-video {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 250px;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 10000;
+}
